@@ -1,12 +1,12 @@
-import React from "react"
+import React from "react";
 
-function MyInfo(){
-    return(
+const MyInfo = (props) => {
+    return (
         <div className="content">
             <h1 className="title">ABOUT ME</h1>
             <hr></hr>
             <p className="content-info">
-                Hello, my name is Mark Decello and I am a computer science major.
+                Hello, my name is {props.info.firstName} {props.info.lastName} and I am a {props.info.major} major.
                 My interest in the field are Web Development, App Development,
                 Game Development, and Software Engineer. I have knowledge of these
                 programming languages: C++, Java, JavaScript, Python, and Bash. I also
@@ -36,7 +36,7 @@ function MyInfo(){
                 <li>Reduced the app’s registration process by half, making signing up much easier.</li>
             </ul>
         </div>
-    )
+    );
 }
 
 export default MyInfo;

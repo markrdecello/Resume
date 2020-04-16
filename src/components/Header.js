@@ -1,13 +1,25 @@
-import React from "react"
+import React from "react";
 
-function Header() {
+const Header = () => {
+    const date = new Date();
+    const hours = date.getHours();
+    let timeOfDay;
+
+    if (hours < 12) {
+        timeOfDay = "Morning";
+        
+    } else if (timeOfDay >= 12 && timeOfDay < 17) {
+        timeOfDay = "Afternoon";
+    } else {
+        timeOfDay = "Evening";
+    }
     return (
         <div>
             <header className="head">
-                Welcome To My Website!
+                Good {`${timeOfDay}`}! Welcome To My Website!
             </header>
         </div>
-    )
-};
+    );
+}
 
 export default Header;

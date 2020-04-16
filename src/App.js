@@ -1,15 +1,17 @@
 import React from 'react';
-import Header from "./components/Header"
-import MyInfo from "./components/MyInfo"
-import Footer from "./components/Footer"
+import Header from "./components/Header";
+import MyInfo from "./components/MyInfo";
+import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   //const infoComponents = infoData.map(item => <MyInfo key={item.id} info={item} />)
 
   return (
     <div>
       <Header />
-      <MyInfo />
+      <MyInfo 
+        info={{firstName: "Mark", lastName: "Decello", major: "Computer Science"}}
+      />
       <Footer />
     </div>
   );

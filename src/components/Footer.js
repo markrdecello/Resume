@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-function Footer(){
+const Footer = () => {
     return (
         <div className="foot">
             <footer>
@@ -11,7 +11,7 @@ function Footer(){
                 </ul>
             </footer>
         </div>
-    )
-};
+    );
+}
 
 export default Footer;
